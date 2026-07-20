@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Study Home</title>
+  <style>
+    :root {
+      --bg: #f4f5f7;
+      --card: #ffffff;
+      --text: #18181b;
+      --muted: #71717a;
+      --accent: #7c5cff;
+      --border: #e4e4e7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121215;
+        --card: #1c1c21;
+        --text: #f4f4f5;
+        --muted: #a1a1aa;
+        --border: #2a2a31;
+      }
+    }
+    * { margin: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Segoe UI", system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    main { width: 100%; max-width: 560px; }
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    h1 { font-size: 28px; margin: 6px 0 4px; }
+    .lead { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+    a.card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin-bottom: 14px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    a.card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      border-color: var(--accent);
+    }
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: color-mix(in srgb, var(--accent) 12%, transparent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .card h2 { font-size: 17px; margin-bottom: 3px; }
+    .card p { font-size: 13px; color: var(--muted); }
+    .arrow { margin-left: auto; color: var(--muted); font-size: 18px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">STUDY HOME</p>
+    <h1>学習サイト</h1>
+    <p class="lead">英語学習用のサイトをここからひらけます。</p>
+
+    <a class="card" href="https://hoshimiyacelica.github.io/english-audio-scripts/">
+      <span class="icon">🎧</span>
+      <span>
+        <h2>英語音声スクリプト</h2>
+        <p>教材の英文を検索して、音声と一緒に確認できます。</p>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="card" href="https://hoshimiyacelica.github.io/part7-flashcards-site/">
+      <span class="icon">🃏</span>
+      <span>
+        <h2>Part 7 フラッシュカード</h2>
+        <p>TOEIC Part 7 の学習用フラッシュカードです。</p>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+  </main>
+</body>
+</html>
